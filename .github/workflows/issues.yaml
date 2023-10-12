@@ -7,5 +7,5 @@ jobs:
   comment-with-action:
     runs-on: ubuntu-latest
     steps:
-    - name: " showing context"
-    - run: echo `${{toJSON(github.event)}}` | jq
+      - name: " showing context"
+      - run: echo `${{toJSON(github.event)}}` | jq .
